@@ -1,0 +1,29 @@
+{
+  "name": "caps-cloud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage"
+},
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresMillsGallego/caps-cloud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndresMillsGallego/caps-cloud/issues"
+  },
+  "homepage": "https://github.com/AndresMillsGallego/caps-cloud#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1115.0",
+    "sqs-consumer": "^5.6.0",
+    "sqs-producer": "^2.1.0"
+  }
+}
