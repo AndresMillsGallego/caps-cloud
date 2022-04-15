@@ -7,6 +7,32 @@ Authors:  Tanner Percival & Andres Mills Galleg0
 - We rebuilt the Caps server using AWS.
 - Set intervals to simulate real life orders
 
+
+## Instructions
+
+You can get started by cloning down this repo, then running
+
+`npm i`
+
+You will need to set the app up with your own `SNS` and `SQS` products.
+
+Then open up two terminals side by side and run:
+
+`node vendor.js`
+
+then 
+
+`node driver.js`
+
+![step 1](./assets/lab-19-1.png)
+
+The code is set up to randomize the "order" (payload) from the vendor and is sent every 8 seconds.  
+
+Upon receipt, the driver sends a message to the appropriate, corresponding vendor queue who then receives the message and logs it.
+
+![step 2](./assets/lab-19-2.png)
+
+
 ## Featured Tasks
 
 - `vendor.js` 
